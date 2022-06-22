@@ -2,10 +2,6 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   margin: 0;
 }
 
@@ -45,25 +41,30 @@ a {
 }
 
 .hero {
-  padding: 0 100px;
-  flex: 1;
+  padding: 0 200px;
 }
   
 .hero-top {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  padding: 100px 0;
+  gap: 90px;
 }
 
 .hero-left {
-  flex: 1;
+  width: 450px;
+  height: 200px;
+}
+
+.hero-left button {
+  margin-top: 10px;
 }
 
 .hero-right {
-  flex: 1;
-  height: 150px;
+  width: 450px;
+  height: 220px;
   background-color: #808080;
-  flex-shrink: 0;
 }
 
 .hero-main-text {
@@ -80,7 +81,7 @@ a {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 10px 0;
 }
@@ -91,24 +92,23 @@ a {
 }
 
 .info {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 150px;
 }
 
 .info-title {
   font-size: 36px;
   font-weight: 700;
   color: #1F2937;
-  align-self: center;
-  margin: 20px 0;
+  margin: 50px 0;
+  text-align: center;
 }
 
 .info {
   display: flex;
-  gap: 52px;
+  gap: 60px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -127,13 +127,12 @@ a {
 }
 
 .quote {
-  flex: 1;
   background-color: #E5E7EB;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 200px;
+  padding: 120px 520px;
 }
 
 .quote-text {
@@ -155,18 +154,18 @@ a {
 }
 
 .cta {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 100px 100px;
 }
 
 .cta-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
-  padding: 30px 70px;
+  gap: 200px;
+  padding: 40px 100px;
   border-radius: 4px;
 }
 
@@ -175,7 +174,7 @@ a {
 }
 
 .footer {
-  height: 60px;
+  height: 80px;
   color: #E5E7EB;
   display: flex;
   justify-content: center;

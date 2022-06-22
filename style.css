@@ -1,19 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,700&display=swap');
+
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
 }
 
 button {
   border: none;
   border-radius: 4px;
+  padding: 6px 20px;
 }
 
 button,
-.cta {
+.cta-box {
   background-color: #3882F6;
   color: #F9FAF8;
 }
 
-button a {
+a button {
   color: #F9FAF8;
   font-weight: 700;
 }
@@ -22,6 +30,9 @@ ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  gap: 14px;
+  align-items: center;
 }
 
 a {
@@ -31,6 +42,28 @@ a {
 .hero,
 .footer {
   background-color: #1F2937;
+}
+
+.hero {
+  padding: 0 100px;
+  flex: 1;
+}
+  
+.hero-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 1;
+  height: 150px;
+  background-color: #808080;
+  flex-shrink: 0;
 }
 
 .hero-main-text {
@@ -45,26 +78,62 @@ a {
   color: #E5E7EB;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
 .header-logo {
   font-size: 24px;
   color: #F9FAF8;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .info-title {
   font-size: 36px;
   font-weight: 700;
   color: #1F2937;
+  align-self: center;
+  margin: 20px 0;
+}
+
+.info {
+  display: flex;
+  gap: 52px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info-item {
+  max-width: 150px;
 }
 
 .info-img {
   border: 2px solid #3882F6;
   border-radius: 6px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
+  box-sizing: border-box;
 }
 
 .quote {
+  flex: 1;
   background-color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 200px;
 }
 
 .quote-text {
@@ -74,14 +143,41 @@ a {
   color: #1F2937;
 }
 
+.quote-author {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1F2937;
+  align-self: end;
+}
+
 .cta-text {
   font-weight: 700;
 }
 
-.cta button {
+.cta {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  padding: 30px 70px;
+  border-radius: 4px;
+}
+
+.cta-right button {
   border: 1px solid white;
 }
 
 .footer {
+  height: 60px;
   color: #E5E7EB;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
